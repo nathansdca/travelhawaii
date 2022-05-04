@@ -1,0 +1,84 @@
+body {
+  font-family: "Architects Daughter";
+  background-image: linear-gradient(to bottom, #b3e5fc, #8bc34a);
+  background-repeat: no-repeat;
+}
+
+#jumbotron {
+  background-color: #00bcd4;
+  text-align: center;
+}
+
+#jumbotron h1 {
+  position: relative;
+  animation: jumbo;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes jumbo {
+  0% {
+    top: -200px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+#heading {
+  position: relative;
+  opacity: 0;
+  animation-name: head;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes head {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.col {
+  padding: 1em;
+}
+
+.card-title {
+  font-size: 175%;
+}
+
+#bicards {
+  background-color: mintcream;
+  padding: 1em;
+  line-height: 2;
+  font-size: 110%;
+}
+
+#mcards {
+  background-color: #f9ecf0;
+  padding: 1em;
+  line-height: 2;
+  font-size: 110%;
+}
+
+#ocards {
+  background-color: #f9f2ec;
+  padding: 1em;
+  line-height: 2;
+  font-size: 110%;
+}
+
+#button {
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+#button:hover {
+  transform: rotateX(180deg);
+}
